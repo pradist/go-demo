@@ -1,4 +1,4 @@
-banch:
+bench:
 	go test -bench=.
 
 test:
@@ -7,3 +7,6 @@ test:
 test-cover:
 	go test ./... -v -coverprofile=coverage.out
 	go tool cover -html=coverage.out
+
+format:
+	go fmt ./...
